@@ -1,0 +1,21 @@
+#indexing = accesing elemnets of asequence using [] (indexing opreator)
+# count starts with 0(forwardly) and (backwardly) it starts with -1
+# formula =  [start:end:step]
+
+credit_number="123-456-789"
+print(credit_number[2::])
+print(credit_number[:4]) # 4 will be excluded 
+print(credit_number[::3]) # will start from 0 and have gap of 3 digits
+print(credit_number[::-1])
+print(credit_number[5:9]) 
+print(credit_number[2:9:4])
+print(credit_number[::-1]) # will give reversed string 
+
+last_digit = credit_number[-4:]
+print(f"xxx-xxx{last_digit}")
+
+email=input("enter your email : ")
+username = email[:email.index("@")]
+domian = email[email.index("@")+1:]
+
+print(f"Your username is {username} and domain is {domian}")
